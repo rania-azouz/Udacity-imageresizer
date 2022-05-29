@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Node Express Image Resizer Project</title>
+</head>
+<body>
+    <div class = "container">
+    <br><br>
+    <h1 class ="text-center"> Image Resizer</h1> 
+<br/>
+<form action ="/resizeImage" method ="post" enctype ="multipart/form-data">
+<div class ="form-group">
+    <input
+    type = "file"
+    name = "images"
+    required
+    class = "form-control"
+    >
+<br/><br/>
+    
+    </div>
+
+<div class = "form-group">
+     
+    <label for = "width">Width</label>
+    <input class = "form-control" type ="number" name="width" id="">
+</div>
+<div class = "form-group">
+    <label for = "height">Height</label>
+    <input class = "form-control" type ="number" name="height" id="">
+    <br/><br/>
+</div>
+<div class = "form-group">
+<button class="btn btn-danger btn-block">Resize and Download
+</button>
+</form>
+</div>
+</body>
+</html>
